@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>Sistema de imagenes</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Dropzone css -->
+        <link href="plugins/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css">
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/default.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="./inicio.html" class="logo">
+                    </a>
+                </div>
+
+                <nav class="navbar-custom">
+
+                    <ul class="navbar-right d-flex list-inline float-right mb-0">
+
+                        <li class="dropdown notification-list">
+                            <div class="dropdown notification-list nav-pro-img">
+                                <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <div class="inbox-item">
+                                        <div class="inbox-item-img float-left mr-3">
+                                            <img src="assets/images/users/user-4.jpg" class="thumb-md rounded-circle" alt="user">
+                                        </div>
+                                        <h6 class="inbox-item-author mt-24 mb-1">Luisa Madrid</h6>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                    <!-- item-->
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Perfil</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="login.html"><i class="mdi mdi-login-variant"></i> Login</a>
+                                    <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Salir</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left">
+                            <button class="button-menu-mobile open-left waves-effect">
+                                <i class="mdi mdi-menu"></i>
+                            </button>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu" id="side-menu">
+                            <li>
+                                <a href="./inicio.html" class="waves-effect">
+                                    <i class="fas fa-home"></i>
+                                    <span> Inicio </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./ingresar_paciente.html" class="waves-effect">
+                                    <i class="fas fa-user-plus"></i>
+                                    <span> Ingresar paciente </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./cosultar_paciente.html" class="waves-effect">
+                                    <i class="fas fa-id-card"></i>
+                                    <span> Consultar paciente </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./quienes_somos.html" class="waves-effect">
+                                    <i class="mdi mdi-crop-free"></i>
+                                    <span> Quienes Somos </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./contactenos.html" class="waves-effect">
+                                    <i class="fas fa-envelope"></i>
+                                    <span> Contáctenos </span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="page-title-box">
+                                    <h3>Sistema de imagenes - IMG Software</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <section class="row">
+                            <div class="col-lg-6">
+                                <form>
+                                    <div class="form-group row">
+                                            <label for="name" class="col-sm-3 col-form-label">Nombre</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" type="text" id="name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="identityNum" class="col-sm-3 col-form-label">N° Documento</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" type="number" id="identityNum">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label">Género</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control">
+                                                    <option selected disabled>Seleccione ..</option>
+                                                    <option>Masculino</option>
+                                                    <option>Femenino</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label">EPS</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control">
+                                                    <option selected disabled>Seleccione ..</option>
+                                                    <option>IPS UDEA</option>
+                                                    <option>COOMEVA</option>
+                                                    <option>SURA</option>
+                                                    <option>CRUZ BLANCA</option>
+                                                    <option>MEDIMAS</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="age" class="col-sm-3 col-form-label">Edad</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" type="number" id="age">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="telephone" class="col-sm-3 col-form-label">Teléfono</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" type="tel" id="telephone">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="address" class="col-sm-3 col-form-label">Dirección</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" type="text" id="address">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="offset-md-3 col-sm-9">
+                                                <button type="button" class="btn btn-info btn-lg btn-form">Guardar</button>
+                                            </div>
+                                        </div>
+
+                                </form>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="card m-b-20">
+                                    <div class="card-body">
+
+                                        <div class="m-b-30">
+                                            <form action="#" class="dropzone">
+                                                <div class="dz-message" data-dz-message><span>Arrastra los archivos aquí</span></div>
+                                                <div class="fallback">
+                                                    <input name="file" type="file" multiple="multiple">
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div> <!-- end col -->
+                        </section> <!-- end row -->
+
+                    </div> <!-- container-fluid -->
+
+                </div> <!-- content -->
+
+                <footer class="footer">
+                        © 2018 IMG Software - <span class="d-none d-sm-inline-block"> Crafted with <i class="mdi mdi-heart text-danger"></i> by InFood Team</span>.
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+
+        <script src="plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+        <!-- Dropzone js -->
+        <script src="plugins/dropzone/dist/dropzone.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
