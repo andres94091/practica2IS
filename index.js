@@ -12,15 +12,16 @@ $(document).ready(function(){
 
         lib.message("Intento de logeo");
         let datos = lib.format_formData("#Login")
-        lib
-            .post_json(server+endpoint, datos)
-            .then(function(){
-                $('#token').append(data.token)
-                window.location.replace('inicio.html')
-            })
-            .catch(function(error){
-                lib.message(error)                
-            })
+        window.location.replace('inicio.html')
+        // lib
+        //     .post_json(server+endpoint, datos)
+        //     .then(function(){
+        //         $('#token').append(data.token)
+        //         window.location.replace('inicio.html')
+        //     })
+        //     .catch(function(error){
+        //         lib.message(error)                
+        //     })
         return false
     })
     return false
