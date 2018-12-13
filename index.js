@@ -12,6 +12,7 @@ $(document).ready(() => {
 
         lib.message('intento de login')
         let datos=lib.format_formData('#Login')
+        localStorage.setItem('nombre', datos.username)
         axios
             .post(server+'auth', datos, {})
             .then(function(response) {

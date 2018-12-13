@@ -6,6 +6,9 @@ const server = "http://67efe232.ngrok.io/api/";
 
 const endpoint = "paciente";
 
+// $("#usuario").text(localStorage.getItem('nombre'))
+// lib.message(localStorage.getItem('nombre'))
+
 $(document).ready(function(){
 
     $('#Registro').submit(function(){

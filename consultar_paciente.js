@@ -6,8 +6,10 @@ const server = "http://67efe232.ngrok.io";
 
 const endpoint = "/api/paciente";
 
-$(document).ready(function(){
+$("#usuario").text(localStorage.getItem('nombre'))
+lib.message(localStorage.getItem('nombre'))
 
+$(document).ready(function(){
     $("#Busqueda").submit(()=>{
         lib.message("intento de busqueda")
         let dato = lib.format_formData("#Busqueda")
