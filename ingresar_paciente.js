@@ -1,28 +1,42 @@
-lib.message("Load index.js");
-lib.message("entramos al index.js")
+lib.message("Load ingresar_paciente.js");
+lib.message("entramos al ingresar_paciente.js")
 
 // const API = "http://localhost:5000/api/user";
-const server = "https://9c7aca2d.ngrok.io/api/";
+const server = "http://67efe232.ngrok.io/api/";
 
-const endpoint = "auth";
+const endpoint = "paciente";
 
-$('#Registro').submit(function(){
-    lib.message('formulario de la imagen')
+$(document).ready(function(){
 
-    let data = lib.format_formData('#Registro')
-    let imagen = lib.get_image('#file')
-    let formulario = new FormData()
-    formulario.append('multimedia', imagen.files[0])
-    formulario.append("nombre", data.nombre);
-    formulario.append("documento", data.documento);
-    formulario.append("eps", data.eps);
-    formulario.append("sexo", data.sexo);
-    formulario.append("telefono", data.telefono);
+    $('#Registro').submit(function(){
+        lib.message('formulario de la imagen')
 
-    lib.message(formulario)
+        let data = lib.format_formData('#Registro')
+        let imagen = lib.get_image('#file')
+        let formulario = new FormData()
+        formulario.append('multimedia', imagen.files[0])
+        formulario.append("nombre", data.nombre);
+        formulario.append("documento", data.documento);
+        formulario.append("eps", data.eps);
+        formulario.append("sexo", data.sexo);
+        formulario.append("telefono", data.telefono);
 
-    // lib.post_multipart(server+'paciente', formulario).then(function(response){
-    //   lib.message(response)
-    // })
+        lib.message(formulario)
+
+        lib.post_multipart(server+endpoint, formulario).then(function(response){
+          lib.message(response)
+          $("#name").val("")
+          $("#identityNum").val("")
+          $("#sexo").val("")
+          $("#eps").val("")
+          $("#age").val("")
+          $("#telephone").val("")
+          $("#address").val("")
+          $("#file").val("")
+          $("#status").append("Registro guardado de manera exitosa")
+
+        })
+        return false
+    })
     return false
-});
+})

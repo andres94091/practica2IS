@@ -52,8 +52,8 @@
                                     <!-- item-->
                                     <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Perfil</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="login.html"><i class="mdi mdi-login-variant"></i> Login</a>
-                                    <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Salir</a>
+                                    <a class="dropdown-item" href="index.html"><i class="mdi mdi-login-variant"></i> Login</a>
+                                    <a class="dropdown-item text-danger" href="index.html"><i class="mdi mdi-power text-danger"></i> Salir</a>
                                 </div>
                             </div>
                         </li>
@@ -157,7 +157,7 @@
                                         <div class="form-group row">
                                             <label class="col-sm-3 col-form-label">Género</label>
                                             <div class="col-sm-9">
-                                                <select class="form-control" name="sexo">
+                                                <select class="form-control" name="sexo" id="sexo">
                                                     <option selected disabled>Seleccione ..</option>
                                                     <option>Masculino</option>
                                                     <option>Femenino</option>
@@ -167,7 +167,7 @@
                                         <div class="form-group row">
                                             <label class="col-sm-3 col-form-label">EPS</label>
                                             <div class="col-sm-9">
-                                                <select class="form-control" name="eps">
+                                                <select class="form-control" name="eps" id="eps">
                                                     <option selected disabled>Seleccione ..</option>
                                                     <option>IPS UDEA</option>
                                                     <option>COOMEVA</option>
@@ -186,7 +186,7 @@
                                         <div class="form-group row">
                                             <label for="telephone" class="col-sm-3 col-form-label">Teléfono</label>
                                             <div class="col-sm-9">
-                                                <input class="form-control" type="tel" id="telephone" name="telegono">
+                                                <input class="form-control" type="tel" id="telephone" name="telefono">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -198,10 +198,11 @@
                                         <div class="form-group row">
                                             <div class="offset-md-3 col-sm-9">
                                                 <button type="submit" class="btn btn-info btn-lg btn-form">Guardar</button>
+                                                <p id="status"></p>
                                             </div>
                                         </div>
 
-                                </form>
+                                <!-- </form> -->
                             </div>
 
                             <div class="col-6">
@@ -209,17 +210,19 @@
                                     <div class="card-body">
 
                                         <div class="m-b-30">
-                                            <form action="#" class="dropzone">
+                                            <!-- <form action="#" class="dropzone"> -->
                                                 <div class="dz-message" data-dz-message><span>Arrastra los archivos aquí</span></div>
                                                 <div class="fallback">
-                                                    <input name="file" type="file" multiple="multiple">
+                                                    <input name="file" type="file" multiple="multiple" id="file">
                                                 </div>
-                                            </form>
+                                            <!-- </form> -->
                                         </div>
 
                                     </div>
                                 </div>
                             </div> <!-- end col -->
+                        </form>
+                                
                         </section> <!-- end row -->
 
                     </div> <!-- container-fluid -->
