@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>IMG Software</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div class="wrapper-page">
+            <div class="card">
+                <div class="card-body">
+
+                    <h3 class="text-center m-0">
+                        <a href="index.html" class="logo logo-admin"></a>
+                    </h3>
+
+                    <div class="p-3">
+                        <h4 class="text-muted font-18 m-b-5 text-center">Registro</h4>
+                        <p class="text-muted text-center">Obten tu cuenta ahora</p>
+
+                        <form class="form-horizontal m-t-30" action="pages-register.html" id="registrar">
+
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input name="username" type="email" class="form-control" id="username" placeholder="Ingrese un usuario">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userpassword">Contraseña</label>
+                                <input name="password" type="password" class="form-control" id="userpassword" placeholder="Ingrese una contraseña">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userpassword-confirm">Confirma Contraceña</label>
+                                <input name = "confirm_password" type="password" class="form-control" id="userpassword-confirm" placeholder="Ingrese una contraseña">
+                            </div>
+
+                            <div class="form-group row m-t-20">
+                                <div class="col-12 text-right">
+                                    <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Registrar</button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group m-t-10 mb-0 row">
+                                <div class="col-12 m-t-20">
+                                    <p class="font-14 text-muted mb-0" id="Confirmacion"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group m-t-10 mb-0 row">
+                                <div class="col-12 m-t-20">
+                                    <p class="font-14 text-muted mb-0">Con tu registra aceptas los <a href="#" class="text-primary">terminos y condiciones</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="m-t-40 text-center">
+                <p>Ya tienes una cuenta ? <a href="index.html" class="text-primary"> Login </a> </p>
+                <p>© 2018 IMG Software. Crafted with <i class="mdi mdi-heart text-danger"></i> by InFood Team</p>
+            </div>
+        </div>
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+
+        <script src="../plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+            <!-- Load Jquery -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Load pooper -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Load Bootstrap script -->
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Load Axios -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- Load own Script -->
+        <script src="./lib.js"></script>
+        <!-- Load index.js -->
+        <script src="./registro.js"></script>
+
+    </body>
+
+</html>

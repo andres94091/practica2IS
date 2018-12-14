@@ -14,7 +14,7 @@ $(document).ready(() => {
         let datos=lib.format_formData('#Login')
         localStorage.setItem('nombre', datos.username)
         axios
-            .post(server+'auth', datos, {})
+            .post(server+endpoint, datos, {})
             .then(function(response) {
                 console.log(response.data);
                 if(response.data.hasOwnProperty('token')){
