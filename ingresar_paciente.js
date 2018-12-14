@@ -25,20 +25,20 @@ $(document).ready(function(){
         formulario.append("telefono", data.telefono);
 
         lib.message(formulario)
-
-        lib.post_multipart(server+endpoint, formulario).then(function(response){
-          lib.message(response)
-          $("#name").val("")
-          $("#identityNum").val("")
-          $("#sexo").val("")
-          $("#eps").val("")
-          $("#age").val("")
-          $("#telephone").val("")
-          $("#address").val("")
-          $("#file").val("")
-          $("#status").append("Registro guardado de manera exitosa")
-
-        })
+            lib.message("entre aqui y no se porque")
+            lib.post_multipart(server+endpoint, formulario).then(function(response){
+                lib.message(response)
+                $("#name").val("")
+                $("#identityNum").val("")
+                $("#sexo").val("")
+                $("#eps").val("")
+                $("#age").val("")
+                $("#telephone").val("")
+                $("#address").val("")
+                $("#file").val("")
+                $("#status").text("Registro guardado de manera exitosa")
+    
+            })
         return false
     })
     return false

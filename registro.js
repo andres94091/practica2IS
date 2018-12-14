@@ -29,7 +29,7 @@ $(document).ready(()=>{
                 })
         }
         else{
-            $("#Confirmacion").text("las contraceñas no coinciden")
+            $("#Confirmacion").text("las contraseñas no coinciden")
             $("#userpassword").val("")
             $("#userpassword-confirm").val("")
         }
